@@ -27,7 +27,10 @@ export default function Matches() {
   });
 
   const matchMutation = useMutation({
-    mutationFn: (clubId: string) => apiRequest("POST", "/api/matches", { clubId }),
+    mutationFn: async (clubId: string) => {
+      const response = await apiRequest("POST", "/api/matches", { clubId });
+      return response.json();
+    },
     onError: () => {
       toast({
         title: "Error",
