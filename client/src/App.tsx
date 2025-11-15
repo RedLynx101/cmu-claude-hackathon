@@ -12,6 +12,7 @@ import ClubDetail from "@/pages/club-detail";
 import ClubForm from "@/pages/club-form";
 import Matches from "@/pages/matches";
 import NotFound from "@/pages/not-found";
+import logoIcon from "@assets/generated_images/CollabCMU_header_logo_icon_ff8d28a4.png";
 
 function Router() {
   return (
@@ -41,7 +42,15 @@ function App() {
             <AppSidebar />
             <div className="flex flex-col flex-1">
               <header className="flex items-center justify-between gap-4 p-3 border-b">
-                <SidebarTrigger data-testid="button-sidebar-toggle" />
+                <div className="flex items-center gap-3">
+                  <SidebarTrigger data-testid="button-sidebar-toggle" />
+                  <div className="flex items-center gap-2">
+                    <img src={logoIcon} alt="CollabCMU" className="h-8 w-8" />
+                    <h1 className="text-xl font-bold text-primary" style={{ fontFamily: 'Poppins, sans-serif' }}>
+                      CollabCMU
+                    </h1>
+                  </div>
+                </div>
                 <ThemeToggle />
               </header>
               <main className="flex-1 overflow-hidden">
