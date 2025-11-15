@@ -12,7 +12,7 @@ import ClubDetail from "@/pages/club-detail";
 import ClubForm from "@/pages/club-form";
 import Matches from "@/pages/matches";
 import NotFound from "@/pages/not-found";
-import logoIcon from "@assets/generated_images/CollabCMU_logo_transparent_a8d5e58c.png";
+import logoIcon from "@assets/claudehackatonico_1763236383510.png";
 
 function Router() {
   return (
