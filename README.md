@@ -165,6 +165,14 @@ This is a hackathon project, but contributions are welcome! Feel free to:
 
 MIT License - feel free to use this project for your own campus or organization.
 
+## 👥 Team
+
+This project was built by:
+- **Noah Hicks**
+- **Michelle Zheng**
+- **Egshiglen Batjargal**
+- **Zareen Tasnim**
+
 ## 🙏 Acknowledgments
 
 - Built for the **Claude Hackathon** by Anthropic
