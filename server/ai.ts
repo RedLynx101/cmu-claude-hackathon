@@ -60,7 +60,13 @@ Return your response as a JSON array with this exact structure:
 Return ONLY the JSON array, no other text.`;
 
   try {
-    const response = await anthropic.messages.create({
+    console.log(`Finding matches for ${sourceClub.name}...`);
+    
+    const timeoutPromise = new Promise((_, reject) => 
+      setTimeout(() => reject(new Error('Claude API timeout after 15 seconds')), 15000)
+    );
+    
+    const apiPromise = anthropic.messages.create({
       model: "claude-sonnet-4-5",
       max_tokens: 8192,
       messages: [
@@ -70,6 +76,8 @@ Return ONLY the JSON array, no other text.`;
         },
       ],
     });
+    
+    const response = await Promise.race([apiPromise, timeoutPromise]) as Anthropic.Message;
 
     const content = response.content[0];
     if (content.type !== "text") {
@@ -128,14 +136,17 @@ Return ONLY the JSON array, no other text.`;
       return generateHeuristicMatches(sourceClub, otherClubs);
     }
 
+    console.log(`Successfully generated ${matches.length} AI matches for ${sourceClub.name}`);
     return matches.sort((a, b) => b.matchScore - a.matchScore).slice(0, 3);
   } catch (error) {
-    console.error("Error finding matches, using heuristic fallback:", error);
+    console.error(`Error finding matches for ${sourceClub.name}, using heuristic fallback:`, error);
     return generateHeuristicMatches(sourceClub, otherClubs);
   }
 }
 
 function generateHeuristicMatches(sourceClub: Club, otherClubs: Club[]): Match[] {
+  console.log(`Using heuristic matching for ${sourceClub.name} with ${otherClubs.length} other clubs`);
+  
   const scored = otherClubs.map(club => {
     let score = 0;
     
