@@ -38,8 +38,8 @@ Student organizations at universities often operate in isolation, missing valuab
 
 ## 🚀 Live Demo
 
-The application is **published live** and ready to use:
-- [Live Demo Link](https://your-deployment-url.replit.app) *(replace with actual deployment URL)*
+The application is **published live** and ready to use as a demo:
+- [Live Demo Link](https://collabcmu.com/)
 
 ## 🛠️ Technologies
 
