@@ -63,12 +63,12 @@ Return ONLY the JSON array, no other text.`;
     console.log(`Finding matches for ${sourceClub.name}...`);
     
     const timeoutPromise = new Promise((_, reject) => 
-      setTimeout(() => reject(new Error('Claude API timeout after 15 seconds')), 15000)
+      setTimeout(() => reject(new Error('Claude API timeout after 5 seconds')), 5000)
     );
     
     const apiPromise = anthropic.messages.create({
-      model: "claude-sonnet-4-5",
-      max_tokens: 8192,
+      model: "claude-3-5-sonnet-20241022",
+      max_tokens: 4096,
       messages: [
         {
           role: "user",
