@@ -12,7 +12,6 @@ import ClubDetail from "@/pages/club-detail";
 import ClubForm from "@/pages/club-form";
 import Matches from "@/pages/matches";
 import NotFound from "@/pages/not-found";
-import logoIcon from "@assets/claudehackatonico_1763236383510.png";
 
 function Router() {
   return (
@@ -45,7 +44,7 @@ function App() {
                 <div className="flex items-center gap-3">
                   <SidebarTrigger data-testid="button-sidebar-toggle" />
                   <div className="flex items-center gap-2">
-                    <img src={logoIcon} alt="CollabCMU" className="h-8 w-8" />
+                    <img src="/logo.png" alt="CollabCMU" className="h-8 w-8" />
                     <h1 className="text-xl font-bold text-primary" style={{ fontFamily: 'Poppins, sans-serif' }}>
                       CollabCMU
                     </h1>

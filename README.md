@@ -1,7 +1,5 @@
 # CollabCMU
 
-![CollabCMU Logo](attached_assets/claudehackatonico_1763236383510.png)
-
 **AI-Powered Club Collaboration Discovery Platform for Carnegie Mellon University**
 
 CollabCMU is an intelligent platform that reduces siloing between student organizations at Carnegie Mellon University by automatically discovering cross-club collaboration opportunities. Built for the [Claude Hackathon](https://claude.ai/hackathon), this application demonstrates how Claude AI can strengthen campus community engagement through smart partnership matching.
