@@ -6,6 +6,8 @@ CollabCMU is an AI-powered platform designed to reduce siloing between student o
 
 The platform addresses the problem of missed collaboration opportunities by providing a centralized discovery mechanism that helps clubs find complementary partners, avoid reinventing the wheel, and reduce event overlap while strengthening overall community engagement.
 
+**Project Status:** Published live for public use. A comprehensive README.md is available for the public GitHub repository, explaining the hackathon context, setup instructions, and usage guide.
+
 ## User Preferences
 
 Preferred communication style: Simple, everyday language.

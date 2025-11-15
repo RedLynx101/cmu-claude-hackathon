@@ -1,0 +1,183 @@
+# CollabCMU
+
+![CollabCMU Logo](attached_assets/claudehackatonico_1763236383510.png)
+
+**AI-Powered Club Collaboration Discovery Platform for Carnegie Mellon University**
+
+CollabCMU is an intelligent platform that reduces siloing between student organizations at Carnegie Mellon University by automatically discovering cross-club collaboration opportunities. Built for the [Claude Hackathon](https://claude.ai/hackathon), this application demonstrates how Claude AI can strengthen campus community engagement through smart partnership matching.
+
+## 🎯 Hackathon Context
+
+This project was created for the **Claude Hackathon** to showcase the power of Anthropic's Claude AI in solving real-world organizational challenges. The hackathon challenged developers to build innovative applications that leverage Claude's advanced reasoning and natural language capabilities.
+
+### Why This Problem?
+
+Student organizations at universities often operate in isolation, missing valuable collaboration opportunities with complementary clubs. CollabCMU addresses this by:
+- **Reducing siloing** between organizations with shared interests
+- **Preventing duplicate efforts** and event overlap
+- **Maximizing resource efficiency** through strategic partnerships
+- **Strengthening community engagement** across campus
+
+## ✨ Features
+
+### Intelligent Matching with Claude AI
+- **AI-Powered Compatibility Analysis**: Claude Sonnet 4.5 analyzes club profiles (goals, offerings, needs) to identify complementary partnerships
+- **Match Scoring**: Generates compatibility scores (0-100) with detailed reasoning
+- **Collaboration Idea Generation**: Creates 3-5 specific, actionable collaboration proposals for each match
+- **Auto-Generated Partnership Proposals**: Professional partnership proposals ready to present to club leadership
+- **Ready-to-Send Outreach Emails**: Personalized outreach messages that can be sent immediately
+
+### Club Profile Management
+- Create and manage comprehensive club profiles
+- Define goals, offerings, needs, and categories
+- Browse all registered clubs with search and filtering
+- View detailed club information and compatibility potential
+
+### Smart Fallback System
+- Heuristic-based matching when Claude API times out
+- Ensures reliable service even during high API load
+- Category overlap and complementary resource analysis
+
+## 🚀 Live Demo
+
+The application is **published live** and ready to use:
+- [Live Demo Link](https://your-deployment-url.replit.app) *(replace with actual deployment URL)*
+
+## 🛠️ Technologies
+
+### Frontend
+- **React** with TypeScript for type-safe component development
+- **Vite** for fast development and optimized builds
+- **Wouter** for lightweight client-side routing
+- **TanStack Query** for server state management
+- **Shadcn/ui** + **Radix UI** for accessible, customizable components
+- **Tailwind CSS** with custom CMU Tartan theme
+
+### Backend
+- **Node.js** + **Express** for the HTTP server
+- **Drizzle ORM** for type-safe database interactions
+- **PostgreSQL** (Neon serverless) for persistent storage
+- **In-memory storage** option for development/testing
+
+### AI Integration
+- **Anthropic Claude API** (Sonnet 4.5) via Replit's AI Integrations
+- Structured JSON responses for reliable data parsing
+- 5-second timeout with intelligent fallback
+
+## 📋 Prerequisites
+
+- Node.js 18+ installed
+- PostgreSQL database (or use in-memory storage for development)
+- Anthropic Claude API key (get one at [console.anthropic.com](https://console.anthropic.com))
+
+## 🏃 Running Locally
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/yourusername/collabcmu.git
+cd collabcmu
+```
+
+### 2. Install Dependencies
+
+```bash
+npm install
+```
+
+### 3. Set Up Environment Variables
+
+Create a `.env` file in the root directory:
+
+```env
+# Required: Anthropic API Configuration
+ANTHROPIC_API_KEY=your_anthropic_api_key_here
+
+# Optional: Database (omit to use in-memory storage)
+DATABASE_URL=your_postgresql_connection_string
+
+# Optional: Session Secret (auto-generated if not provided)
+SESSION_SECRET=your_random_session_secret
+```
+
+### 4. Start the Development Server
+
+```bash
+npm run dev
+```
+
+The application will start on `http://localhost:5000`
+
+## 📖 How to Use
+
+### For Club Leaders
+
+1. **Create Your Club Profile**
+   - Navigate to "Add Club" in the sidebar
+   - Fill in your club's name, description, and icon
+   - Define your goals (what you want to achieve)
+   - List your offerings (what you can provide to partners)
+   - Specify your needs (what you're looking for from partners)
+   - Select relevant categories
+
+2. **Discover Collaboration Opportunities**
+   - Go to "Find Matches" in the sidebar
+   - Select your club from the dropdown
+   - Click "Find Matches" to let Claude AI analyze compatibility
+   - Review the top 3 recommended partnerships
+
+3. **Review Match Results**
+   - See compatibility scores and detailed reasoning
+   - Explore specific collaboration ideas generated by Claude
+   - Copy the auto-generated partnership proposal
+   - Use the ready-to-send outreach email to contact partners
+
+4. **Browse All Clubs**
+   - View the complete directory of registered clubs
+   - Search by name or filter by category
+   - Click on any club to see full details
+
+## 🎨 Design Philosophy
+
+CollabCMU features a clean, professional design inspired by modern productivity tools like Linear and Notion, adapted for the academic collaboration context:
+
+- **CMU Tartan Red** (#CC2936) as the primary brand color
+- **Inter** for body text, **Poppins** for headings
+- Light/dark mode support
+- Responsive design for desktop and mobile
+- Accessibility-first component architecture
+
+## 🧠 How Claude Powers the Matching
+
+The matching algorithm leverages Claude Sonnet 4.5's advanced reasoning capabilities:
+
+1. **Context Analysis**: Claude receives detailed context about the source club and all potential partner clubs
+2. **Multi-Factor Evaluation**: Analyzes complementary strengths, aligned goals, mutual benefits, and practical collaboration potential
+3. **Structured Output**: Returns JSON with scores, reasoning, collaboration ideas, proposals, and outreach messages
+4. **Quality Assurance**: Ensures professional, actionable recommendations that club leaders can use immediately
+
+## 🤝 Contributing
+
+This is a hackathon project, but contributions are welcome! Feel free to:
+- Report bugs or suggest features via GitHub Issues
+- Submit pull requests for improvements
+- Adapt the codebase for your own university or organization
+
+## 📄 License
+
+MIT License - feel free to use this project for your own campus or organization.
+
+## 🙏 Acknowledgments
+
+- Built for the **Claude Hackathon** by Anthropic
+- Powered by **Claude Sonnet 4.5** for intelligent matching
+- Developed on **Replit** with their AI Integrations service
+- Inspired by the vibrant student organization community at **Carnegie Mellon University**
+
+## 📞 Contact
+
+For questions or feedback about this project, please open an issue on GitHub.
+
+---
+
+**Built with ❤️ for the Claude Hackathon**
