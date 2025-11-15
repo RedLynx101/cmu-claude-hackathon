@@ -12,7 +12,7 @@ import ClubDetail from "@/pages/club-detail";
 import ClubForm from "@/pages/club-form";
 import Matches from "@/pages/matches";
 import NotFound from "@/pages/not-found";
-import logoIcon from "@assets/generated_images/CollabCMU_header_logo_icon_ff8d28a4.png";
+import logoIcon from "@assets/generated_images/CollabCMU_logo_transparent_a8d5e58c.png";
 
 function Router() {
   return (
