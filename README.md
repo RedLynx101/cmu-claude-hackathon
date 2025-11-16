@@ -6,7 +6,7 @@ CollabCMU is an intelligent platform that reduces siloing between student organi
 
 ## 🎯 Hackathon Context
 
-This project was created for the **Claude Hackathon** to showcase the power of Anthropic's Claude AI in solving real-world organizational challenges. The hackathon challenged developers to build innovative applications that leverage Claude's advanced reasoning and natural language capabilities.
+This project was created for the **Claude Hackathon** to showcase the power of Anthropic's Claude AI in solving real-world organizational challenges. The hackathon challenged developers to build innovative applications that leverage Claude's advanced reasoning and natural language capabilities. We had one hour to create a solution. 
 
 ### Why This Problem?
 
